@@ -43,15 +43,10 @@
 
 %-------------------------
 % Custom commands
-\newcommand{\resumeItem}[2]{
+\newcommand{\resumeItem}[1]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    \textbf{#1}}
   }
-}
-
-\newcommand{\resumePoint}[1]{
-  \item\small{#1}
-}
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
@@ -78,26 +73,23 @@
     \end{tabular*}\vspace{-5pt}
 }
 
-
-\newcommand{\resumeBlog}[2]{
-  \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1}\\
-      \textsl{\small#2}\\
-    \end{tabular*}\vspace{-5pt}
-}
-
-
-
-
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+
+\newcommand{\resumePoint}[1]{\item\small{{#1}\vspace{-4pt}}}
+
 
 \renewcommand{\labelitemii}{$\circ$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+\newcommand{\resumeSubPointS}{\begin{itemize}}
+\newcommand{\resumeSubPointE}{\end{itemize}\vspace{-4pt}}
+
+
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -108,22 +100,65 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\href{https://www.linkedin.com/in/raman-shinde-562950b2}{\Large Raman Shinde}} & Email : \href{mailto:raman.shinde15@gmail.com}{raman.shinde15@gmail.com}\\
-  \href{https://github.com/Raman-Raje/git-github/}{https://github.com/Raman-Raje/git-github/} & Mobile : +91 9595161238 \\
+  \href{https://github.com/Raman-Raje}{https://github.com/Raman-Raje} & Mobile : +91 9595161238 \\
 \end{tabular*}
 
 
+%---------Career Objective--------------
+\section{Career Objective}
+Results-oriented professional with 4+ years of experience in python development and expertise in Machine-learning, Deep Learning,Computer Vision and Natural Language Processing (NLP).
 
+%----------Career Summary---------------
+\section{Career Summary}
+\resumeSubHeadingListStart
+	
+	\resumePoint{Currently pursuing my career as a Data Scientist with core expertise in Data analysis, visualization, building Machine Learning based solutions.}
+	
+	\resumePoint{My work has revolved architecting ML-driven solutions in products/platforms and getting them live into production.}
+	
+	\resumePoint{Expertise in various ML algorithms(KNN,K-means,Naive Bayes,Logistic Regrssion,SVM,DT,Random Forest,GBDT etc.) and scikit-learn.}
+	
+	\resumePoint{Experience and expertise in building Deep Learning models using Nueral Networks such as LSTM/RNN, CNN, Transformer, Bert, Autoencoders, Memory Networks, Seq2Seq etc.}
+		
+	\resumePoint{Experience in implementing research papers and model building using TensorFlow, Keras, Pytorch for model building. Flask for APIs for model serving.}
+	
+	\resumePoint{Have been using Numpy, Pandas, Matplotlib, openCV, SciPy for data cleaning, processing and visualization.}
+
+\resumeSubHeadingListEnd  
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
+  
+  \resumeSubheading
+      {Xpanxion}{Pune, India}
+      {Data Scientist}{Jan. 2020 - Present}
+      \resumeItemListStart
+        \resumeItem{Digital Access Hub(Python/DL/ML)}
+        	\resumeSubPointS
+        		\item Building various reusable AIML components as a part of Innovation team 
+        		\item Extracting information from the reciepts with the help of Optical character recognition(OCR)
+        		\item Table extraction from the pdf and entity extraction.
+        		\item Recommendation system using the content-based algorithm
+        		\item Object Detection,video analytics using YOLO and opencv.
+        		
+        		
+        	\resumeSubPointE
+          
+      \resumeItemListEnd
 
     \resumeSubheading
-      {Siemens(Client)}{Pune, India}
-      {Product Developement Engineer}{Dec. 2018 - Present}
+      {Siemens R\&D}{Pune, India}
+      {Product Development Engineer}{Dec. 2018 - Present}
       \resumeItemListStart
         \resumeItem{Automation Designer(Python/C++)}
-          {Working as a part of sequence designer team. Working on NX as a product developer for Siemens.}
+        	\resumeSubPointS
+        		\item Developing an application for designing of manufacturing sequence.
+        		\item Debugging and fixing the issue in the existing code.
+				\item Implemented model for Question answering from knowledge base.
+				
+        	\resumeSubPointE
+ 
       \resumeItemListEnd
 
     \resumeSubheading
@@ -131,120 +166,117 @@
       {Software Developer}{Dec 2015 - Nov 2018}
       \resumeItemListStart
         \resumeItem{Application Developer(Python)}
-          {Developed an application for client NCRA for Monitoring and Controlling of Giant Metrewave Radio Telescope. Coding for I/O operation. Monitoring H/W devices. Debugging the issue and modifying the GUI as per requirements}
-        \resumeItem{Production Support}
-          {Worked in QAPM for client Morgan Stanley.In QAPM team, I had worked in ED\&S (Enterprise data and services) team which deals with different applications like CRD, SRD, TS, and PM}
+         
+			\resumeSubPointS
+        		\item Developed an application for client NCRA for Monitoring and Controlling.
+        		\item Monitoring and debugging the issue and modifying the GUI as per requirements.
+				\item Build a model for the false triggering of alarm and anomaly detection.
+			
+        	\resumeSubPointE         
+         
+        \resumeItem{Production Management}
+        
+        	\resumeSubPointS
+        		\item Worked in Production Management for client Morgan Stanley.
+				\item In QAPM, I was part of the EDS team which deals with different financial applications like CRD, SRD and TS.		
+        	\resumeSubPointE         
       \resumeItemListEnd
 	  
   \resumeSubHeadingListEnd
 
-
 %--------CASE STUDIES------------
-\section{Case Studies}
+\section{Projects}
 \resumeSubHeadingListStart
+
+ \resumeCase
+    {Deep Learning}
+      \resumeItemListStart  
+	\resumeItem{\href{https://github.com/Raman-Raje/Neural-Machine-Translation-using-Attention-mechanism}{Neural Machine Translation using Attention mechanism (NLP)}}
+	{Task is to implement Machine Translator.Attention was used to deal with longer sequences. Data cleaning and output labels were padded with start and end tokens before feeding to n/w.}
+	
+	\resumeItem{\href{https://github.com/Raman-Raje/Machine-Reading-Comprehension-Neural-Question-Answer-} {Nueral Question Answering(NLP + Attention +  Machine Reading Coprehension)}}
+		{Objective is to find correct answer for given question and context pair. Implemented Standford Attentive Reader.SQUAD v1 dataset was used for this project. Various binary and NLP features were used to get the best results. Compared the final results with fine tuned BERT model.}    
+	
+	 \resumeItem{\href{https://github.com/Raman-Raje/ImageCaptioning} {Image Captioning with Flickr 8k dataset. (CNN+RNN+Transfer Learning)}}
+		{Task is to generate caption for an image.Pre-trained Inception n/w on imagenet dataset was used in combination with RNN to generate caption for the given image. One-to-many RNN is used to train the n/w. For each image 5 standard caption are provided. The data was converted into sequence before feeding the n/w.}
+		
+		\resumeItem{\href{https://github.com/Raman-Raje/Human-Activity-Recognization} {Human Activity Recognition}}
+		{Task is to detect the human activity based on data from smartphone sensor. The dataset was obtained from kaggle. The problem was solved using both \textbf{Machine Learning as well as Deep Learning}. Got \textbf{96\%} accuracy using machine learning model with already given feature set. We have used LSTM model to solve the same problem using sequential raw data from sensors and got accuracy of \textbf{91.82\%}.}
+		
+
+    \resumeItemListEnd
 
     \resumeCase
       {Machine Learning}
       \resumeItemListStart
-        
+      	        
 		\resumeItem{\href{https://github.com/Raman-Raje/Netflix-Movie-Recommendation-}{Netflix Movie Recommendation System (Collaborative based recommendation)}}
           {Objective was for the given movie and user predict the rating given by him/her to the movie.The dataset was obtained from kaggle. Matrix factorization was used to get similarity matrices. Tried and tested various ML models to get minimum Root Mean Square.}
+          
+          \resumeItem{\href{https://github.com/Raman-Raje/MPST-Movie-Plot-Synopses-with-Tags}{Movie Plot Synopses with Tags(Topic Modelling)}}
+      	{Objective of the case study was to predict the tags for given movie plot synopsis. Dataset was obtained form Kaggle.Various machine learning models were tried and tested with OvR classifier to get the best results.Logistic regression with Topic modelling gave best accuracy best micro f1 score.}
 
-	
-		\resumeItem{\href{https://github.com/Raman-Raje/Quora-Question-Pair-Similarity} {Quora Question Pair Similarity}}
-          {Objective was to check if given pair of questions are similar or not. The task was to determine whether the given pair of questions are duplicate of one another or not.Data preprocessing and feature engineering was done to get more features. The performance metric used was log-loss}
-		  
-		  
+
 		\resumeItem{\href{https://github.com/Raman-Raje/Stack-Overflow-Tag-Prediction} {Stack Overflow Tag Prediction}}
 		{Objective is to predict as many as tags possible with high Precision and Recall.The dataset was obtained from kaggle. The given problem is \textbf{multi-label classification problem}. The dataset contains features such as Id, Title, Body and Tags. Data preprocessing and cleaning was done to remove html tags and hyperlinks. Micro-Averaged F1-Score was used as performance metric as mentioned on Kaggle. }
 		
-		\resumeItem{\href{https://github.com/Raman-Raje/Personalized-Cancer-Diagnosis} {Personalized Cancer Diagnosis}}
-		{Objective is to classify the given genetic variations based on text-based clinical literature.The dataset was obtained from Kaggle. It contains various features such as Genes, Text, Variation and Label (Type of Cancer). Univariate analysis of each feature was done to check feature importance. These features were converted into their respective vector forms. The task is to minimize the log-loss and determine how well the model performed}
-	
-	
 		\resumeItem{\href{https://github.com/Raman-Raje/Amazon-fashion-discovery-engine-Content-Based-recommendation-} {Amazon fashion discovery engine (Content Based recommendation)}}
 		{The objective is to recommend similar apparel products in ecommerce.The dataset was obtained with help of amazon product advertising API. 183k data points was obtained from product category women’s top. Similarity is used to recommend products. Tried and tested various combination of weighted vectors to get the best results.}
-                      
-      \resumeItemListEnd
-	
-  \resumeCase
-    {Deep Learning}
-      \resumeItemListStart
-      \resumeItem{\href{https://github.com/Raman-Raje/Human-Activity-Recognization} {Human Activity Recognition}}
-		{Task is to detect the human activity based on data from smartphone sensor. The dataset was obtained from kaggle. The problem was solved using both \textbf{Machine Learning as well as Deep Learning}. Got \textbf{96\%} accuracy using machine learning model with already given feature set. We have used LSTM model to solve the same problem using sequential raw data from sensors and got accuracy of \textbf{91.82\%}.}
-	
-	\resumeItem{\href{https://github.com/Raman-Raje/Neural-Machine-Translation-using-Attention-mechanism}{Neural Machine Translation using Attention mechanism (NLP)}}
-	{Task is to implement Machine Translator.Attention was used to deal with longer sequences. Data cleaning and output labels were padded with start and end tokens before feeding to n/w.}
-	
-	 \resumeItem{\href{https://github.com/Raman-Raje/ImageCaptioning} {Image Captioning with Flickr 8k dataset. (CNN+RNN+Transfer Learning)}}
-		{Task is to generate caption for an image.Pre-trained Inception n/w on imagenet dataset was used in combination with RNN to generate caption for the given image. One-to-many RNN is used to train the n/w. For each image 5 standard caption are provided. The data was converted into sequence before feeding the n/w.}
-	\resumeItem{\href{https://github.com/Raman-Raje/Machine-Reading-Comprehension-Neural-Question-Answer-} {Nueral Question Answering(NLP + Attention +  Machine Reading Coprehension)}}
-		{Task is to find answer for given questions and context. Implemented Standford Attentive Reader model using SQUAD dataset.}    
-    
-    
-    \resumeItemListEnd
- \resumeSubHeadingListEnd
- 
 
-%-----------WRITTINGS----------------------
-\section{Blogs}
-	\resumeSubHeadingListStart
- 	\resumeBlog{Understanding sequential/Time-Series data for LSTM}
- 			{https://medium.com/@raman.shinde15/understanding-sequential-timeseries-data-for-lstm-4da78021ecd7}
- 			
- 	\resumeBlog{Back Propagation through LSTM: A differential approach}
- 	{https://medium.com/@raman.shinde15/backpropagation-through-lstm-a-differential-approach-4eb5ecc58d9d}
- 	
- 	\resumeBlog{Image Captioning With Flickr8k Dataset \& BLEU}
- 	{https://medium.com/@raman.shinde15/image-captioning-with-flickr8k-dataset-bleu-4bcba0b52926}
- 	
- 	\resumeBlog{Neural Question And Answering Using SQAD Dataset And Attention..!!!}
- 	{https://medium.com/@raman.shinde15/neural-question-and-answering-using-sqad-dataset-and-attention-983d3a1dd42c}
- 	
- 	\resumeSubHeadingListEnd
- 	
+      \resumeItemListEnd
+ \resumeSubHeadingListEnd
+
+
 %--------CERTIFICATION------------
 
-\section{Courses/Certification}
+\section{Certifications/Internship}
  \resumeSubHeadingListStart
- 	\resumePoint{Online Internship at Applied AI course.( Dec 2018 to Apr. 2019)}
+ 	\resumePoint{Applied Machine Learning course at Applied AI. ( Jan 2018 to May 2019)}
+ 	\resumePoint{Completed Standford Statistical Learning (Self-Paced) course.}
+ 	\resumePoint{Completed Deep Learning Specialization course from Coursera}
  	\resumePoint{Internship at IARE, Aurangabad on Industrial automation. (May 2014 - Jun 2014)}
  	
  \resumeSubHeadingListEnd
-
-%--------TECHNICAL SKILLS------------
+   
+ %--------TECHNICAL SKILLS------------
 \section{Technical Skills}
   \resumeSubHeadingListStart
-    \resumePoint{\textbf{Languages :} Python, C++, C}
-    \resumePoint{\textbf{Data Analysis :} Pandas, Numpy, Matplotlib, Seaborn}
-    \resumePoint{\textbf{ML /DL Toolkit:} Keras, Sklearn, scikit-multilearn , tensorflow}
+    \resumeSubItem{Languages}{Python, C++, C}
+    \resumeSubItem{Data Analysis}{Pandas, Numpy, Matplotlib, Seaborn, openCV}
+    \resumeSubItem{ML /DL Toolkit}{Keras, scikit-learn , tensorflow, pytorch}
   \resumeSubHeadingListEnd
-  
-  
-%--------ACHIEVEMENTS------------
-
-\section{Achievements}
-  \resumeSubHeadingListStart
-  	\resumePoint{Participated in \textbf{State Level Roller Hockey} Championship.}
-  	\resumePoint{Winner of C Sprinter Competition in National Level Technical Event 'KRATOS'.}
-  	\resumePoint{Won 1st prize in District Level Roller Skating Competition organized by \textbf{Dainik Lokmat.}}
-    
-  \resumeSubHeadingListEnd
-
+   
 %--------ACADEMICS------------
 
-\section{Academics}
+\section{Education}
   \resumeSubHeadingListStart
-    \resumePoint{2011-2015 - \textbf{B.Tech} in Electronics and Telecommunication from Shri Guru Gobind Singhji Institute of Engineering and Technology, Nanded with \textbf{CGPA 7.7/10}}
-    \resumePoint{2009-2011 – \textbf{Class Xll (HSC)} , form Maharashtra State Board of Education with \textbf{83.33\%}}
-     \resumePoint{2008-2009 – \textbf{Class X (SSC)} , form Maharashtra State Board of Education with \textbf{90.92\%}}
+    \resumePoint{\textbf{B.Tech} in Electronics and Telecommunication from SGGSIE\&T, Nanded with \textbf{CGPA 7.7} (2011 - 2015)}
+    \resumePoint{Class Xll (HSC), form Maharashtra State Board of Education with \textbf{83.33\%} (2009 - 2011)}
+     \resumePoint{Class X (SSC), form Maharashtra State Board of Education with \textbf{90.92\%}  (2008 - 2009)}
   \resumeSubHeadingListEnd  
+  
 
+  
+%%--------ACHIEVEMENTS------------
+%
+%\section{Achievements}
+%  \resumeSubHeadingListStart
+%  	\resumePoint{Participated in \textbf{State Level Roller Hockey} Championship.}
+%  	\resumePoint{Winner of C Sprinter Competition in National Level Technical Event 'KRATOS'.}
+%  	\resumePoint{Won 1st prize in District Level Roller Skating Competition organized by \textbf{Dainik Lokmat.}}
+%    
+%  \resumeSubHeadingListEnd
 
-
-%--------DECLARATION------------
-\section{}
-	I hereby declare that all the details given above are true to the best of my knowledge and belief.
+  
+%%-----------WRITTINGS----------------------
+%\section{Blogs}
+%	\resumeSubHeadingListStart
+% 	\resumePoint{\href{https://medium.com/@raman.shinde15/understanding-sequential-timeseries-data-for-lstm-4da78021ecd7}{Understanding sequential/Time-Series data for LSTM}}
+% 	\resumePoint{\href{https://medium.com/@raman.shinde15/backpropagation-through-lstm-a-differential-approach-4eb5ecc58d9d}{Back Propagation through LSTM: A differential approach}}
+% 	\resumePoint{\href{https://medium.com/@raman.shinde15/image-captioning-with-flickr8k-dataset-bleu-4bcba0b52926}{Image Captioning With Flickr8k Dataset \& BLEU}}
+% 	\resumePoint{\href{https://medium.com/@raman.shinde15/neural-question-and-answering-using-sqad-dataset-and-attention-983d3a1dd42c}{Neural Question And Answering Using SQAD Dataset And Attention..!!!}}
+% 	\resumeSubHeadingListEnd
+  
 
 %-------------------------------------------
 \end{document}
