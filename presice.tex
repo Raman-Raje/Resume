@@ -1,0 +1,248 @@
+%-------------------------
+% Resume in Latex
+% Author : Raman Shinde
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    \textbf{#1}}
+  }
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubhead}[6]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeCase}[1]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1}
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+
+\newcommand{\resumePoint}[1]{\item\small{{#1}\vspace{-4pt}}}
+
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+\newcommand{\resumeSubPointS}{\begin{itemize}}
+\newcommand{\resumeSubPointE}{\end{itemize}\vspace{-4pt}}
+
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/raman-shinde-562950b2}{\Large Raman Shinde}} & Email : \href{mailto:raman.shinde15@gmail.com}{raman.shinde15@gmail.com}\\
+  \href{https://github.com/Raman-Raje}{https://github.com/Raman-Raje} & Mobile : +91 9595161238 \\
+\end{tabular*}
+
+
+%%---------Career Objective--------------
+%\section{Career Objective}
+%Results-oriented professional with clo years of experience in python development and expertise in Machine-learning, Deep Learning,Computer Vision and Natural Language Processing (NLP).
+
+%----------Career Summary---------------
+\section{Career Summary}
+\resumeSubHeadingListStart
+	
+	\resumePoint{Currently pursuing my career as a Senior Software Engineer with core expertise in Deep Learning, Machine Learning, Python, C++.}
+	
+	\resumePoint{My work has revolved around architecting ML-driven solutions in products/platforms and getting them live into production.}
+	
+	\resumePoint{Expertise in various ML algorithms(KNN,K-means,Naive Bayes,Logistic Regression,SVM,DT,Random Forest,GBDT etc.)}
+	
+	\resumePoint{Experience in building Deep Learning models using Neural Networks such as LSTM/RNN, CNN, Transformer, Bert, Autoencoders, Memory Networks, etc.}
+	
+	\resumePoint{Well versed with applications such as Docker, Kubernetes and Kafka. Experience in using GCP/AWS when there's a need for high computing power.}
+
+\resumeSubHeadingListEnd  
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+  
+  \resumeSubheading
+      {Imagination Technologies}{Pune, India}
+      {Senior Software Engineer [Vision and AI]}{Sep 2021 - Present}
+      \resumeItemListStart
+      	\resumeItem{NC-SDK}
+        	\resumeSubPointS
+        		\item Working on building SDK to support neural networks to run on Imagination's GPU and NNA (Neural network accelerator) with the help of TVM.
+        		\item Implemented support for LSTM/RNN in Imagination NCSDK for Networks present in PyTorch, tf, Onnx.
+        		\item Developed graph transforms for various operations and operators in RelayIR(TVM).
+        		\item Contributed in development of quantization tools(static/dynamic quantization, QAT) for various frameworks.
+        		
+        	\resumeSubPointE
+          
+      \resumeItemListEnd  
+  
+  \resumeSubheading
+      {Xpanxion}{Pune, India}
+      {Data Scientist}{Jan 2020 - Aug 2021}
+      \resumeItemListStart
+      	\resumeItem{Anthem - Symphony}
+        	\resumeSubPointS
+        		\item Extracting information from the various medical documents with help of AI/ML. 
+        		\item Document Classification and candidate extraction from classified documents to extract benefit, rates, drug details and plans details. Using libraries like Fonduer, Tesseract, OpenCV.
+        		
+        	\resumeSubPointE
+        \resumeItem{Digital Access Hub}
+        	\resumeSubPointS
+        		\item Building various reusable AI/ML components as a part of Innovation team 
+        		\item Recommendation system using the content-based/collaborative algorithm
+        		\item NLP components such as NER, QnA from knowledge base and sequence translation.
+        		\item Worked on Computer Vision use cases like Object localization and detection, Image segmentation and Gesture recognition.
+        		\item CCA (Canonical Correlation Analysis ), Factor analysis to find out the relation
+between the features and then use the ML algorithm to find out the insights.				
+        	\resumeSubPointE
+          
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Siemens R\&D}{Pune, India}
+      {Product Development Engineer}{Dec 2018 - Dec 2019}
+      \resumeItemListStart
+        \resumeItem{Automation Designer(Python/C++)}
+        	\resumeSubPointS
+        		\item Developing an application for designing of manufacturing sequence.
+        		\item Debugging and fixing the issue in the existing code.
+				
+        	\resumeSubPointE
+ 
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {TCS}{Pune, India}
+      {Software Developer}{Dec 2015 - Nov 2018}
+      \resumeItemListStart
+        \resumeItem{Application Developer(Python)}
+         
+			\resumeSubPointS
+        		\item Developed an application for client NCRA for Monitoring and Controlling.
+        		\item Monitoring and debugging the issue and modifying the GUI as per requirements.
+				\item Build a model for the false triggering of alarm and anomaly detection.
+			
+        	\resumeSubPointE         
+                 
+      \resumeItemListEnd
+	  
+  \resumeSubHeadingListEnd
+   
+
+%--------CASE STUDIES------------
+\section{Projects}
+\resumeSubHeadingListStart
+
+ \resumeCase
+    {Deep Learning}
+      \resumeItemListStart  
+	\resumeItem{\href{https://github.com/Raman-Raje/Neural-Machine-Translation-using-Attention-mechanism}{Neural Machine Translation using Attention mechanism (NLP)}}
+	{Task is to implement Machine Translator.Attention was used to deal with longer sequences. Data cleaning and output labels were padded with start and end tokens before feeding to n/w.}
+	
+	\resumeItem{\href{https://github.com/Raman-Raje/Machine-Reading-Comprehension-Neural-Question-Answer-} {Nueral Question Answering(NLP + Attention +  Machine Reading Coprehension)}}
+		{Objective is to find correct answer for given question and context pair. Implemented Standford Attentive Reader.SQUAD v1 dataset was used for this project. Various binary and NLP features were used to get the best results. Compared the final results with fine tuned BERT model.}    
+		
+    \resumeItemListEnd
+
+    \resumeCase
+      {Machine Learning}
+      \resumeItemListStart
+      	        
+		\resumeItem{\href{https://github.com/Raman-Raje/Netflix-Movie-Recommendation-}{Netflix Movie Recommendation System (Collaborative based recommendation)}}
+          {Objective was for the given movie and user predict the rating given by him/her to the movie.The dataset was obtained from kaggle. Matrix factorization was used to get similarity matrices. Tried and tested various ML models to get minimum Root Mean Square.}
+
+		\resumeItem{\href{https://github.com/Raman-Raje/Stack-Overflow-Tag-Prediction} {Stack Overflow Tag Prediction}}
+		{Objective is to predict as many as tags possible with high Precision and Recall.The dataset was obtained from kaggle. The given problem is \textbf{multi-label classification problem}. The dataset contains features such as Id, Title, Body and Tags. Data preprocessing and cleaning was done to remove html tags and hyperlinks. Micro-Averaged F1-Score was used as performance metric as mentioned on Kaggle. }
+		
+
+      \resumeItemListEnd
+ \resumeSubHeadingListEnd
+
+ %--------TECHNICAL SKILLS------------
+\section{Technical Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages:}{Python, C++, NodeJs}
+    \resumeSubItem{Database:}{MySql,MongoDB}
+    \resumeSubItem{ML/DL Toolkit:}{Keras, scikit-learn , tensorflow, pytorch, Onnx}
+	\resumeSubItem{Others:}{Docker, Kafka, Kubernetes, GitHub,  svn, Jira, Perforce, Jenkins, Service Now}
+  \resumeSubHeadingListEnd 
+
+   
+%--------ACADEMICS------------
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumePoint{\textbf{B.Tech} in Electronics and Telecommunication from SGGSIE\&T, Nanded with \textbf{CGPA 7.7} (2011 - 2015)}
+    \resumePoint{Class Xll (HSC), form Maharashtra State Board of Education with \textbf{83.33\%} (2009 - 2011)}
+     \resumePoint{Class X (SSC), form Maharashtra State Board of Education with \textbf{90.92\%}  (2008 - 2009)}
+  \resumeSubHeadingListEnd  
+  
+
+\end{document}
